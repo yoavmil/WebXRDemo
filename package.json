@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
+    "build": "ng build",
+    "publish": "ng build --configuration production outputPath/docs --baseHRef=WebXRDemo",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postbuild": "copyfiles -V -f ./dist/*/* docs"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
